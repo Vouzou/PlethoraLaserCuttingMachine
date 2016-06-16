@@ -1,11 +1,36 @@
 # PlethoraLaserCuttingMachine
 Plethora Technical Exercise
 
-Compile and run the application in Visual Studio 2013.
+Compile and run the application in Visual Studio 2013. Set as Start Up project the ImportJsonApplication project.
 
 Go to Binaries/Release/ folder and run the ImportJsonApplication.exe
 
-You can simply select the file you want and click the "Import" button or just drag and drop a file on the window.
+You can simply select the file you want and click the "Import" button or just drag and drop a file on the window. I added a folder "Profiles" with the modified json files. I modified the files so they comply with the schema:
+{
+    "Edges": [
+        id: {
+            "Type": "LineSegment",
+            "Vertices": [id],
+        },
+        id: {
+            "Type": "CircularArc",
+            "Center": {
+                "X": double,
+                "Y": double,
+            },
+            "ClockwiseFrom": id,
+            "Vertices": [id],
+        }
+    ],
+    "Vertices": [
+        id: {
+            "Position": {
+                "X": double,
+                "Y": double,
+            }
+        }
+    ]
+}
 
 Dependencies:
 
