@@ -5,7 +5,8 @@ Compile and run the application in Visual Studio 2013. Set as Start Up project t
 
 Go to Binaries/Release/ folder and run the ImportJsonApplication.exe
 
-You can simply select the file you want and click the "Import" button or just drag and drop a file on the window. I added a folder "Profiles" with the modified json files. I modified the files so they comply with the schema:
+You can simply select the file you want and click the "Import" button or just drag and drop a file on the window. You can drag and drop one file after the other. If you drag multiple files it will just process the first one.
+I added a folder "Profiles" with the modified json files. I modified the files so they comply with the schema:
 {
     "Edges": [
         id: {
